@@ -1,5 +1,5 @@
 //program 2.2 Implementation of operations on Rectangle
-
+// rectangle.cpp file
 #include "Rectangle.h"
 
 Rectangle::Rectangle() {}

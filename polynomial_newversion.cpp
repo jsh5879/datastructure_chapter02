@@ -166,7 +166,7 @@ int main(void) {
 			P1.Display();
 			cout << "Polynomial2:";
 			P2.Display();
-			//P3.Substract(P1, P2);
+			//P3.Substract(P1, P2); 학생 구현 실습 대상
 			cout << "----------------------------------------\n";
 			break;
 		case 3:
@@ -178,6 +178,7 @@ int main(void) {
 			//P3.Multiply(P1, P2);
 			cout << "----------------------------------------\n";
 			break;
+			//case 4: P2.Eval(5); 학생 구현 실습 대상
 		case 0:
 			cout << "Good Bye...!!!" << endl;
 			exit(0);

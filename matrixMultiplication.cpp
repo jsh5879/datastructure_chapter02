@@ -94,11 +94,9 @@ int main()
 		cout << "Enter rows and columns for first matrix: ";
 	}
 
-
 	//c = a.Multiply(b);
 	cout << "Multiply of Matrix a,b" << endl;
 	c.Display();
-
 
 	system("pause");
 	return 0;

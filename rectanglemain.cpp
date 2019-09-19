@@ -1,4 +1,6 @@
 //program 2.3 C++ code fragment for Rectangle main.cpp
+// rectanglemain.cpp
+// 디버깅하고 완성시키는 실습-개인실습 대상
 #include <iostream>
 #include "Rectangle.h"
 
