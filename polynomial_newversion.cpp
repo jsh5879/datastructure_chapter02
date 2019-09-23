@@ -1,4 +1,7 @@
-
+/* polynomial_newversion.cpp - 다항식 Add, multi, sub, eval를 구현*/
+//학번:
+//이름:
+//Github Id:
 //polynomial 2차 버젼
 //2.3 The Polynomial ADT
 //program 2.8 Adding two polynomials
@@ -136,12 +139,16 @@ int main(void) {
 	int choice;
 
 
-	Polynomial P1, P2, P3;
+	Polynomial P1, P2, P3, P4;
 	cout << "Instruction:- \nExample:-\nP(x)=5x^3+3x^1\nEnter the Polynomial like\nP(x)=5x^3+0x^2+3x^1+0x^0\n";
 	cout << "Enter Polynomial1:-" << endl;
-	P1.GetData();
+	//P1.GetData();
+	cin >> P1;
 	cout << "Enter Polynomial2:-" << endl;
-	P2.GetData();
+	//P2.GetData();
+	cin >> P2;
+	cout << "Enter Polynomial3:-" << endl;
+	cin >> P3;
 
 	while (1) {
 		cout << "\n****** Menu Selection ******" << endl;
@@ -152,33 +159,48 @@ int main(void) {
 		case 1:
 			cout << "\n--------------- Addition ---------------\n";
 			cout << "Polynomial1:";
-			P1.Display();
+			//P1.Display();
+			cout << P1;
 			cout << "Polynomial2:";
-			P2.Display();
-			P3 = P1.Add(P2);
-			P3.Display();
+			//P2.Display();
+			cout << P2;
+			cout << p3;
+			//P3 = P1.Add(P2);
+			P4 = P1 + P2 + P3;
+			//P3.Display();
+			cout << P4;
 			cout << "----------------------------------------\n";
 			break;
 		case 2:
 
 			cout << "\n------------- Substraction -------------\n";
 			cout << "Polynomial1:";
-			P1.Display();
+			//P1.Display();
+			cout << P1;
 			cout << "Polynomial2:";
-			P2.Display();
+			//P2.Display();
+			cout << P2;
 			//P3.Substract(P1, P2); 학생 구현 실습 대상
+			P4 = P1 - P2;
+			cout << P4;
 			cout << "----------------------------------------\n";
 			break;
 		case 3:
 			cout << "\n----------- Multiplication -------------\n";
 			cout << "Polynomial1:";
-			P1.Display();
+			//P1.Display();
+			cout << P1;
 			cout << "Polynomial2:";
-			P2.Display();
-			//P3.Multiply(P1, P2);
+			//P2.Display();
+			cout << p2
+				//P3.Multiply(P1, P2);
+				P3 = P1 * P2;
 			cout << "----------------------------------------\n";
 			break;
-			//case 4: P2.Eval(5); 학생 구현 실습 대상
+			case 4: //P2.Eval(5); 학생 구현 실습 대상
+				cout << P4;
+				P2.Eval(3);
+				break;
 		case 0:
 			cout << "Good Bye...!!!" << endl;
 			exit(0);

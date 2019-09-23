@@ -1,3 +1,9 @@
+/* matrixMultiplication.cpp - 2차원 행렬을 1차원으로 저장, + 구현
+학번:
+이름:
+Github ID:
+*/
+
 #include <iostream>
 using namespace std;
 #include <stdlib.h>
@@ -73,19 +79,23 @@ int main()
 	Matrix c(2, 4);
 
 	cout << "Enter first matrix: " << endl;
-	a.GetData();
+	//a.GetData();
+	cin >> a;
 	cout << "Enter second matrix: " << endl;
-	b.GetData();
+	//b.GetData();
+	cin >> b;
 
 	cout << "Display first matrix: " << endl;
-	a.Display();
+	//a.Display();
+	cout << a;
 	cout << "Display second matrix: " << endl;
-	b.Display();
-
+	//b.Display();
+	cout << b;
 	Matrix d(4, 3);
-	//d = b.Transpose();
+	d = b.Transpose();
 	cout << "Transpose() of Matrix b" << endl;
-	d.Display();
+	//d.Display();
+	cout << d;
 
 	/* If colum of first matrix in not equal to row of second matrix, asking user to enter the size of matrix again. */
 	if (a.CompareRowCol(b))
@@ -95,9 +105,10 @@ int main()
 	}
 
 	//c = a.Multiply(b);
+	c = a * d;//d는 transpose 행렬
 	cout << "Multiply of Matrix a,b" << endl;
-	c.Display();
-
+	//c.Display();
+	cout << c;
 	system("pause");
 	return 0;
 }
