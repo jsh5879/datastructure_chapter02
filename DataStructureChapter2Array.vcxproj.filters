@@ -18,6 +18,9 @@
     <ClInclude Include="rectangle.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="randomwalk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="rectangle.cpp">
@@ -42,6 +45,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="sparsematrices_textversion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="randomwalk.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
