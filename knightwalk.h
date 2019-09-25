@@ -17,9 +17,9 @@ public:
 	int CheckComplete();//모든 cell이 nonzero면 종료
 	int CheckBoundary(Offsets nextPosition);
 	void Mark(const Offsets chess);
-	void CountMove(int row, int col);//[row,col]에 대하여 1번 이동, 2번 이동 등
+	void MarkNth(const Offsets chess, int n);
 	friend ostream& operator << (ostream& stream, Chessboard& s);
 private:
 	int rows, cols;
-	int* Term;//the add 2.6ress of a[i][j] = 0 + i * cols + j => Fig2.6
+	int* Term;//1차원 배열을 pointer를 사용하여 저장
 };
