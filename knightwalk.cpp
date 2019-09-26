@@ -37,6 +37,7 @@ void NthMove(Chessboard board, const struct Offsets position) {
 	while (!board.CheckComplete()) {
 		//nextMove = (directions)(8.0 * rand());
 		nthTry++;
+		//stack을 이용하여 pop
 		for (directions d = NE; d <= NW; d++)
 		{
 			struct Offsets newPosition;
@@ -46,6 +47,7 @@ void NthMove(Chessboard board, const struct Offsets position) {
 			else
 				board.MarkNth(newPosition, nthTry);
 			nextPosition = newPosition;
+			//stack에 push 필요
 		}
 
 	}
